@@ -25,6 +25,7 @@
   "homepage": "https://github.com/pwfisher/fastboot-watch-notifier#readme",
   "dependencies": {
     "debounce": "1.0.0",
+    "rsvp": "^3.0.16",
     "sane": "1.4.0"
   }
 }
