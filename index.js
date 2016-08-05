@@ -10,8 +10,11 @@ const DEFAULT_DEBOUNCE_DELAY = 250;
 class WatchNotifier {
   constructor(options) {
     this.distPath = options.distPath;
-    this.saneOptions = options.saneOptions;
     this.debounceDelay = options.debounceDelay || DEFAULT_DEBOUNCE_DELAY;
+    this.saneOptions = options.saneOptions || {};
+    this.saneOptions.glob = this.saneOptions.glob || [];
+    this.saneOptions.glob.push('index.html');
+    this.saneOptions.glob.push('fastboot/**');
   }
 
   subscribe(notify) {
