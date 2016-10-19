@@ -1,6 +1,6 @@
 {
   "name": "fastboot-watch-notifier",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Ember fastboot-app-server notifier which restarts server on watched file changes.",
   "main": "index.js",
   "scripts": {
